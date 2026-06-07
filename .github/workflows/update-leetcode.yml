@@ -1,0 +1,82 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch LeetCode stats and update README
+        run: |
+          python3 - << 'PYEOF'
+          import urllib.request, json, re, sys
+
+          USERNAME = "kaushal2006"
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+              with urllib.request.urlopen(req, timeout=20) as res:
+                  return json.loads(res.read())
+
+          total = easy = medium = hard = 0
+
+          try:
+              data = fetch("https://alfa-leetcode-api.onrender.com/" + USERNAME + "/solved")
+              total  = data["solvedProblem"]
+              easy   = data["easySolved"]
+              medium = data["mediumSolved"]
+              hard   = data["hardSolved"]
+              print("alfa-api OK: Total=" + str(total))
+          except Exception as e1:
+              print("alfa-api failed: " + str(e1))
+              try:
+                  data = fetch("https://leetcode-stats-api.herokuapp.com/" + USERNAME)
+                  total  = data["totalSolved"]
+                  easy   = data["easySolved"]
+                  medium = data["mediumSolved"]
+                  hard   = data["hardSolved"]
+                  print("heroku-api OK: Total=" + str(total))
+              except Exception as e2:
+                  print("Both APIs failed: " + str(e2))
+                  sys.exit(1)
+
+          new_block = (
+              "<!--LEETCODE_START-->\n"
+              "![Total](https://img.shields.io/badge/Total%20Solved-" + str(total) + "-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)\n"
+              "![Easy](https://img.shields.io/badge/Easy-" + str(easy) + "-00B8A3?style=for-the-badge)\n"
+              "![Medium](https://img.shields.io/badge/Medium-" + str(medium) + "-FFB800?style=for-the-badge)\n"
+              "![Hard](https://img.shields.io/badge/Hard-" + str(hard) + "-FF375F?style=for-the-badge)\n"
+              "<!--LEETCODE_END-->"
+          )
+
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          updated = re.sub(
+              r"<!--LEETCODE_START-->.*?<!--LEETCODE_END-->",
+              new_block,
+              content,
+              flags=re.DOTALL
+          )
+
+          with open("README.md", "w") as f:
+              f.write(updated)
+
+          print("Done.")
+          PYEOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: auto-update LeetCode stats"
+          git push
