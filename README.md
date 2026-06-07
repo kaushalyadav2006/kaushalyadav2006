@@ -1,23 +1,30 @@
 <div align="center">
 
-# Hi, I'm Kaushal Yadav 👋
+<h1>Kaushal Yadav</h1>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=70A5FD&center=true&vCenter=true&width=700&lines=Full+Stack+Developer+%7C+MERN+Stack;GSSoC+2026+Open+Source+Contributor;BCA+Student+%40+IIMT+University%2C+Meerut;Always+Coding%2C+Always+Learning" alt="Typing SVG" />
+<p><strong>Full Stack Developer (MERN)</strong></p>
 
-<p>
-  <a href="https://linkedin.com/in/kaushalyadav2006">
-    <img src="https://img.shields.io/badge/LinkedIn-kaushalyadav2006-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:yadavkaushal2023@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-yadavkaushal2023-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://leetcode.com/kaushal2006">
-    <img src="https://img.shields.io/badge/LeetCode-kaushal2006-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
-  </a>
-  <a href="https://github.com/kaushalyadav2006">
-    <img src="https://img.shields.io/badge/GitHub-kaushalyadav2006-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Building+production-ready+web+apps+with+MERN;GSSoC+2026+Contributor+%7C+5%2B+PRs+Merged;160%2B+LeetCode+Problems+Solved+in+C%2B%2B;Open+to+Full+Stack+%2F+SWE+Internships" alt="Typing SVG" />
+
+<br/>
+
+<a href="https://linkedin.com/in/kaushalyadav2006">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+</a>&nbsp;
+<a href="mailto:yadavkaushal2023@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-yadavkaushal2023%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" />
+</a>&nbsp;
+<a href="https://leetcode.com/kaushal2006">
+  <img src="https://img.shields.io/badge/LeetCode-kaushal2006-FFA116?style=flat-square&logo=leetcode&logoColor=white" />
+</a>&nbsp;
+<a href="https://github.com/kaushalyadav2006">
+  <img src="https://img.shields.io/badge/GitHub-kaushalyadav2006-181717?style=flat-square&logo=github&logoColor=white" />
+</a>
+
+<br/><br/>
+
+![Open to Work](https://img.shields.io/badge/Status-Open%20to%20Internships-28a745?style=flat-square)
+![Location](https://img.shields.io/badge/Location-Maharajganj%2C%20UP%2C%20India-blue?style=flat-square)
 
 </div>
 
@@ -183,7 +190,7 @@ Selected among thousands of applicants for **GirlScript Summer of Code 2026**.
 
 ---
 
-## 🐍 Contribution Snake
+## 🐍 Contribution Graph
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/kaushalyadav2006/kaushalyadav2006/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake animation" />
