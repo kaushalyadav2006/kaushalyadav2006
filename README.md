@@ -61,10 +61,10 @@
 <div align="center">
 
 <!--LEETCODE_START-->
-![Total](https://img.shields.io/badge/Total%20Solved-160-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
-![Easy](https://img.shields.io/badge/Easy-0-00B8A3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-0-FFB800?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-0-FF375F?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total%20Solved-164-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
+![Easy](https://img.shields.io/badge/Easy-61-00B8A3?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-89-FFB800?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-14-FF375F?style=for-the-badge)
 <!--LEETCODE_END-->
 
 </div>
