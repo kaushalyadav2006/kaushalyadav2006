@@ -17,9 +17,9 @@
 <a href="https://leetcode.com/kaushal2006">
   <img src="https://img.shields.io/badge/LeetCode-kaushal2006-FFA116?style=flat-square&logo=leetcode&logoColor=white" />
 </a>&nbsp;
-<a href="https://github.com/kaushalyadav2006">
+<!-- <a href="https://github.com/kaushalyadav2006">
   <img src="https://img.shields.io/badge/GitHub-kaushalyadav2006-181717?style=flat-square&logo=github&logoColor=white" />
-</a>
+</a> -->
 
 <br/><br/>
 
