@@ -61,9 +61,9 @@
 <div align="center">
 
 <!--LEETCODE_START-->
-![Total](https://img.shields.io/badge/Total%20Solved-167-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
+![Total](https://img.shields.io/badge/Total%20Solved-169-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)
 ![Easy](https://img.shields.io/badge/Easy-63-00B8A3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-90-FFB800?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-92-FFB800?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-14-FF375F?style=for-the-badge)
 <!--LEETCODE_END-->
 
